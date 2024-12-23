@@ -1,0 +1,93 @@
+.abc {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    flex-direction: column;
+    font-size: 50px;
+    padding: 20px; /* Add padding around the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.nnn {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-style: oblique;
+    margin-bottom: 20px; /* Space below the element */
+    font-size: 40px; /* Adjusted font size for better visibility */
+}
+
+.digit {
+    display: flex; /* Added flex to ensure proper layout */
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    padding: 5px 10px; /* Slightly increased padding for better button size */
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    background-color: #e0e0e0; /* Light background color for the buttons */
+    margin: 5px; /* Added margin between buttons */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.digit:hover {
+    background-color: #d0d0d0; /* Hover effect to change background color */
+}
+
+.op, .fun {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #007bff; /* Use a blue color for operator buttons */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px; /* Margin between buttons */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.op:hover, .fun:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.aaa {
+    display: flex; /* Corrected 'flexbox' to 'flex' */
+    background-color: burlywood;
+    align-items: flex-end; /* Corrected 'end' to 'flex-end' for proper alignment */
+    height: 10vh;
+    width: 250px;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: right;
+    margin-bottom: 5px;
+    border-style: hidden;
+    font-size: larger;
+    padding: 10px; /* Padding for spacing inside */
+    border-radius: 5px; /* Rounded corners for consistency */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-bottom: 20px; /* Space below the row */
+    /* Added gap between buttons for consistency */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+    .abc {
+        width: 100%; /* Make the container full-width on smaller screens */
+    }
+    .row {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+    }
+}
+.background-image{
+    background:linear-gradient(135deg, #90EE90, #FF69B4)
+}
